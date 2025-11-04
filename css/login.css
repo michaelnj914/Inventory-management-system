@@ -533,13 +533,14 @@ div.footer a:hover {
 }
 
 div.dashboard_sidebar {
-  width: 20%;
+  width: 25%;
   background: #323232;
   height: 100vh;
 }
 
 div.dashboard_content_container {
-  width: 70%;
+  width: 100%;
+  background: #f9f9f9;
 }
 
 h3.dashboard_logo {
@@ -557,7 +558,7 @@ div.dashboard_sidebar_user {
 }
 
 div.dashboard_sidebar_user img {
-  width: 40px;
+  width: 50px;
   display: inline-block;
   border-radius: 100%;
   border: 2px solid #f685a1;
@@ -573,25 +574,64 @@ div.dashboard_sidebar_user span {
 }
 
 ul.dashboard_menu_lists {
-  padding: 20px;
+  /* padding: 20px; */
   margin-top: 20px;
 }
 
 ul.dashboard_menu_lists li {
   padding: 15px 0px;
-  font-size: 18px;
+
   text-transform: uppercase;
 }
 
 ul.dashboard_menu_lists li a {
   text-decoration: none;
   color: #fff;
+  height: 100%;
+  display: block;
+  font-size: 18px;
+}
+
+ul.dashboard_menu_lists li a i {
+  font-size: 25px;
+}
+
+ul.dashboard_menu_lists li.menuActive {
+  background: #f685a1;
+  color: #fff;
 }
 
 ul.dashboard_menu_lists li:hover {
   background: #f685a1;
+  color: #fff;
 }
 
 ul.dashboard_menu_lists i {
-  margin-left: 20px;
+  /* margin-left: 15px; */
+  padding: 0 10px;
+}
+
+div.dashboard_topNav {
+  background: #fff;
+  padding: 20px;
+}
+
+div.dashboard_topNav a {
+  color: #848383;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+#logoBtn {
+  float: right;
+}
+
+div.dashboard_content {
+  padding: 50px 10px 10px 10px;
+}
+
+div.dashboard_content_main {
+  background: #fff;
+  min-height: 580px;
+  height: 100%;
 }
