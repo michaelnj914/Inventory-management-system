@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IMS Homepage - Inventory Management System</title>
-    <link rel="stylesheet" href="/css/login.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <script
       src="https://kit.fontawesome.com/3703a612af.js"
       crossorigin="anonymous"
@@ -14,7 +14,7 @@
   <body>
     <div class="header">
       <div class="homepageContainer">
-        <a href="index.html">Login</a>
+        <a href="login.php">Login</a>
       </div>
     </div>
     <div class="banner">

@@ -174,7 +174,7 @@ select {
 }
 
 body#loginBody {
-  background: url("/images/background-1.jpg") no-repeat center fixed;
+  background: url("../images/background-12.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
@@ -283,7 +283,7 @@ div.header a:hover {
 }
 
 div.banner {
-  background: url("/images/bg-main.jpg") no-repeat center fixed;
+  background: url("../images/bg-main-1.jpg") no-repeat center fixed;
   background-size: cover;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -567,7 +567,7 @@ div.dashboard_sidebar_user img {
 
 div.dashboard_sidebar_user span {
   top: 20%;
-  font-size: 20px;
+  font-size: 18px;
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
@@ -634,4 +634,13 @@ div.dashboard_content_main {
   background: #fff;
   min-height: 580px;
   height: 100%;
+}
+
+/* Error Css */
+div#errorMessage {
+  background: #fff;
+  padding: 11px;
+  color: red;
+  font-size: 20px;
+  text-align: center;
 }
