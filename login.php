@@ -2,6 +2,9 @@
     // Start the session.
     session_start();
 
+    if (isset($_SESSION['user'])) header('location: dashboard.php');
+
+    // if(!isset($_SESSION['user'])) header('location: dashboard.php');
     $error_message = '';
 
     if($_POST) {
@@ -23,13 +26,9 @@
             // var_dump($_SESSION['user']);
             // die;
 
-        } else $error_message = 'Please make sure that username and password re correct.';
-
-     
+        } else $error_message = 'Please make sure that username and password are correct.';  
     }
-
 ?>
-
 
 
 <!DOCTYPE html>

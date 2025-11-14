@@ -1,9 +1,11 @@
 <?php
-  // start the session.
   session_start();
+
+  if(!isset($_SESSION['user'])) header("location: login.php");
+      
   $user = $_SESSION['user'];
-  
 ?>
+
 
 
 <!DOCTYPE html>
@@ -25,7 +27,9 @@
         <h3 class="dashboard_logo" id="dashboard_logo">LMS</h3>
         <div class="dashboard_sidebar_user">
           <img src="images/image1.jpg" id="userimage" alt="User image." />
+
           <span><?= $user['first_name'] . ' ' . $user['last_name'] ?></span>
+
         </div>
         <div class="dashboard_sidebar_menus">
           <ul class="dashboard_menu_lists">
@@ -72,7 +76,9 @@
       <div class="dashboard_content_container" id="dashboard_content_container">
         <div class="dashboard_topNav">
           <a href="" id="toggleBtn"><i class="fa fa-navicon"></i></a>
-          <a href="" id="logoBtn"><i class="fa fa-power-off"></i> Log Out</a>
+
+          <a href="database/logout.php" id="logoBtn"><i class="fa fa-power-off"></i> Log Out</a>
+
         </div>
 
         <div class="dashboard_content">
