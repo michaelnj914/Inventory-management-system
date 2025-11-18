@@ -644,3 +644,11 @@ div#errorMessage {
   font-size: 20px;
   text-align: center;
 }
+
+/* AppForm */
+form.appForm {
+  width: 50%;
+  /* margin: 0 auto; */
+  background: red;
+  border: 2px solid green;
+}
