@@ -12,10 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DASHBOARD - Inventory Management System</title>
     <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://kit.fontawesome.com/3703a612af.js"
-      crossorigin="anonymous"
-    ></script>
+     <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
   </head>
 
   <body>

@@ -17,8 +17,9 @@
               >
             </li>
             <li>
+              <!-- <i class="fa fa-user-times" aria-hidden="true"></i> -->
               <a href="./add_user.php"
-                ><i class="fa-solid fa-user-plus"></i
+                ><i class="fa fa-user-plus"></i
                 ><span class="menuText">Add User</span></a
               >
             </li>
