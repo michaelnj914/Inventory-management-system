@@ -23,7 +23,6 @@
                 ><span class="menuText">Add User</span></a
               >
             </li>
-           
           </ul>
         </div>
         <!---Sidebar-->

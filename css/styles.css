@@ -533,7 +533,7 @@ div.footer a:hover {
 }
 
 div.dashboard_sidebar {
-  width: 25%;
+  width: 17%;
   background: #323232;
   height: 100vh;
 }
@@ -545,14 +545,16 @@ div.dashboard_content_container {
 
 h3.dashboard_logo {
   color: #f685a1;
-  font-size: 70px;
+  font-size: 65px;
   text-align: center;
 }
 
 div.dashboard_sidebar_user {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
   padding-bottom: 20px;
   border-bottom: 2px solid #fff;
 }
@@ -562,12 +564,13 @@ div.dashboard_sidebar_user img {
   display: inline-block;
   border-radius: 100%;
   border: 2px solid #f685a1;
-  margin-right: 10px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 div.dashboard_sidebar_user span {
   top: 20%;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   color: #fff;
   display: inline-block;
@@ -575,25 +578,25 @@ div.dashboard_sidebar_user span {
 
 ul.dashboard_menu_lists {
   /* padding: 20px; */
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
 ul.dashboard_menu_lists li {
-  padding: 15px 0px;
-
+  padding: 15px 15px;
+  /* font-size: 16px; */
   text-transform: uppercase;
 }
 
 ul.dashboard_menu_lists li a {
   text-decoration: none;
   color: #fff;
-  height: 100%;
+
   display: block;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 ul.dashboard_menu_lists li a i {
-  font-size: 25px;
+  font-size: 22px;
 }
 
 ul.dashboard_menu_lists li.menuActive {
@@ -613,13 +616,13 @@ ul.dashboard_menu_lists i {
 
 div.dashboard_topNav {
   background: #fff;
-  padding: 20px;
+  padding: 18px;
 }
 
 div.dashboard_topNav a {
   color: #848383;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #logoBtn {
@@ -627,12 +630,12 @@ div.dashboard_topNav a {
 }
 
 div.dashboard_content {
-  padding: 50px 10px 10px 10px;
+  padding: 40px 10px 10px 10px;
 }
 
 div.dashboard_content_main {
   background: #fff;
-  min-height: 580px;
+  min-height: 500px;
   height: 100%;
 }
 
@@ -678,7 +681,7 @@ div.appFormInputContainer {
 }
 
 div.userAddFormContainer {
-  padding-top: 100px;
+  padding-top: 23px;
 }
 
 button.appBtn {
@@ -700,14 +703,14 @@ button.appBtn:hover {
 p.responseMessage {
   font-size: 18px;
   text-align: center;
-  margin-top: 25px;
-  background: #979797;
+  margin-top: 20px;
+  background: #a2f0a2;
   padding: 15px;
   color: white;
 }
 
 p.responseMessage_sucess {
-  background: rgb(150, 150, 150);
+  background: rgb(75, 131, 75);
 }
 
 p.responseMessage_error {
@@ -725,12 +728,55 @@ div.row {
 
 div.column {
   width: 100%;
+  padding: 8px 10px;
 }
 
 div.column-5 {
-  width: 41.67%;
+  width: 36.67%;
 }
 
 div.column-7 {
-  width: 58.34%;
+  width: 63.33%;
+}
+
+h1.section_header {
+  font-size: 21px;
+  color: #f685a1;
+  border-bottom: 1px solid #ffd7e1;
+  padding-bottom: 11px;
+  padding: 18px;
+  border-left: 4px solid #f698bf;
+  margin-bottom: 15px;
+}
+
+div.users table,
+th,
+td {
+  border: 1px solid rgb(201, 200, 200);
+  border-collapse: collapse;
+  /* font-size: 15px; */
+}
+
+table {
+  width: 100%;
+}
+
+table th {
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  background: #e5e8e9;
+}
+
+table td {
+  font-size: 13px;
+  text-align: center;
+  padding: 5px;
+}
+
+p.userCount {
+  text-align: right;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f685a1;
 }

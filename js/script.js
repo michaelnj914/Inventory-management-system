@@ -7,7 +7,7 @@ toggleBtn.addEventListener("click", (event) => {
     dashboard_slidebar.style.width = "10%";
     dashboard_slidebar.style.transition = "0.3s all";
     dashboard_content_container.style.width = "90%";
-    dashboard_logo.style.fontSize = "60px";
+    dashboard_logo.style.fontSize = "55px";
     userimage.style.width = "40px";
     username.style.fontSize = "15px";
 
@@ -21,11 +21,11 @@ toggleBtn.addEventListener("click", (event) => {
       "center";
     sideBarOpen = false;
   } else {
-    dashboard_slidebar.style.width = "20%";
-    dashboard_content_container.style.width = "80%";
-    dashboard_logo.style.fontSize = "80px";
-    userimage.style.width = "80px";
-    username.style.fontSize = "30px";
+    dashboard_slidebar.style.width = "15%";
+    dashboard_content_container.style.width = "90%";
+    dashboard_logo.style.fontSize = "70px";
+    userimage.style.width = "55px";
+    username.style.fontSize = "20px";
 
     menuIcons = document.getElementsByClassName("menuText");
     // console.log(menuIcons);
