@@ -1,20 +1,20 @@
 <?php
 $data = $_POST;
-$user_id = (int) $data['user_id'];
+$user_id = (int) $data['userId'];
 $first_name =  $data['f_name'];
 $last_name =  $data['l_name'];
+$email =  $data['email'];
+
 
 // Adding the record
    try {
-        $command = "DELETE FROM users WHERE id={$user_id}";
+        $sql = "UPDATE users SET email=?, first_name=?, last_name=?, updated_at=? WHERE id=?";
         include('connection.php');
-// var_dump($command);die;
-   
-        $conn->exec($command);
+        $conn->prepare($sql)->execute([$email, $first_name, $last_name, date('Y-m-d h:i:s'), $user_id]);
 
         echo json_encode([
             'success' => true,
-            'message' => $first_name . ' ' . $last_name . ' successfully deleted.'
+            'message' => $first_name . ' ' . $last_name . ' successfully Updated.'
         ]);
 
     } catch (PDOException $e) {
